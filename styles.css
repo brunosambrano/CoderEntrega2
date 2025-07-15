@@ -1,0 +1,234 @@
+/* ------------------------------
+   Variables globales
+------------------------------ */
+:root {
+  --color-fondo: #f8f9fa;
+  --color-texto: #2c3e50;
+  --color-acento: #0077b6;
+  --color-hover: #023e8a;
+  --color-claro: #dee2e6;
+  --color-blanco: #ffffff;
+
+  --fuente-general: "Lato", sans-serif;
+  --fuente-titulos: "Open Sans", sans-serif;
+}
+
+/* ------------------------------
+   Reset y base
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fuente-general);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* ------------------------------
+   Encabezado y navegación
+------------------------------ */
+.encabezado {
+  background-color: var(--color-blanco);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-claro);
+}
+
+.menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Por defecto se muestra en fila, pero en pantallas pequeñas se apilarán */
+.menu-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-link {
+  color: var(--color-acento);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: var(--color-hover);
+}
+
+/* ------------------------------
+   Contenido principal
+------------------------------ */
+.contenido-principal {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 10px;
+}
+
+/* ------------------------------
+   Títulos y textos
+------------------------------ */
+.titulo-principal {
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.titulo-secundario {
+  font-family: var(--fuente-titulos);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.texto-parrafo {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ------------------------------
+   Imagen de perfil
+------------------------------ */
+.imagen-perfil {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  border: 4px solid var(--color-acento);
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------
+   Boxes y tarjetas
+------------------------------ */
+.contenedor-conocimientos,
+.contenedor-proyectos,
+.contenedor-experiencias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* ------------------------------
+   Responsive para cajas y tarjetas
+------------------------------ */
+@media (max-width: 768px) {
+  .contenedor-conocimientos,
+  .contenedor-proyectos,
+  .contenedor-experiencias {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajuste de la navegación: apilar en columna */
+  .menu-links {
+    flex-direction: column;
+  }
+
+  /* Reducir imagen en pantallas pequeñas */
+  .imagen-perfil {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Box, card y listas */
+.box-conocimiento,
+.tarjeta-proyecto,
+.tarjeta-experiencia {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-claro);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.lista-items {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.lista-items li {
+  margin-bottom: 6px;
+}
+
+/* ------------------------------
+   Imágenes de proyectos
+------------------------------ */
+.imagen-proyecto {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+/* ------------------------------
+   Formulario de contacto
+------------------------------ */
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border: 1px solid var(--color-claro);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.grupo-input {
+  margin-bottom: 15px;
+}
+
+.grupo-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-claro);
+  border-radius: 4px;
+  font-family: var(--fuente-general);
+}
+
+.boton-enviar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: var(--color-hover);
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+.pie {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid var(--color-claro);
+  font-size: 0.9rem;
+}
