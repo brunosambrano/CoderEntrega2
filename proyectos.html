@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Proyectos | Bruno Sambrano</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="encabezado">
-      <nav class="menu">
-        <ul class="menu-lista">
-          <li><a href="index.html" class="menu-link">Sobre mí</a></li>
-          <li>
-            <a href="conocimientos.html" class="menu-link">Conocimientos</a>
-          </li>
-          <li><a href="proyectos.html" class="menu-link">Proyectos</a></li>
-          <li>
-            <a href="experiencia.html" class="menu-link">Experiencia Laboral</a>
-          </li>
-          <li><a href="contacto.html" class="menu-link">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Proyectos | Bruno Sambrano</title>
+  <link rel="stylesheet" href="/Entrega/Entrega2/styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="menu">
+      <div class="menu-links">
+        <a href="index.html" class="menu-link">Sobre mí</a>
+        <a href="conocimientos.html" class="menu-link">Conocimientos</a>
+        <a href="proyectos.html" class="menu-link">Proyectos</a>
+        <a href="experiencias.html" class="menu-link">Experiencia laboral</a>
+        <a href="contacto.html" class="menu-link">Contacto</a>
+      </div>
+    </nav>
+  </header>
 
-    <main class="contenido-principal">
-      <section class="seccion-proyectos">
-        <h1 class="titulo-principal">Proyectos</h1>
+  <main class="contenido-principal">
+    <h1 class="titulo-principal">Proyectos</h1>
+    <div class="contenedor-proyectos">
 
-        <article class="tarjeta-proyecto">
-          <h2 class="titulo-secundario">Nombre del proyecto</h2>
-          <p class="texto-parrafo">Descripción del proyecto.</p>
-          <img src="#" alt="Imagen del proyecto" class="imagen-proyecto" />
-        </article>
-      </section>
-    </main>
+      <article class="tarjeta-proyecto">
+        <h2 class="titulo-secundario">La Pizzería de las Tortugas Ninja</h2>
+        <img src="#" alt="Imagen del proyecto" class="imagen-proyecto" />
+        <p class="texto-parrafo">E-commerce con Django y React que gestiona pedidos de pizza en cuartos, mitades y completos.</p>
+        <div class="tecnologias-utilizadas">
+          <strong>Tecnologías:</strong> Django, React, CSS, JavaScript
+        </div>
+      </article>
 
-    <footer class="pie">
-      <p class="pie-texto">&copy; 2025 Bruno Sambrano</p>
-    </footer>
-  </body>
+      <article class="tarjeta-proyecto">
+        <h2 class="titulo-secundario">Ruleta G9</h2>
+        <img src="#" alt="Imagen del proyecto" class="imagen-proyecto" />
+        <p class="texto-parrafo">Webapp con juego interactivo de ruleta para evento. Maneja lógica de premios y usuarios.</p>
+        <div class="tecnologias-utilizadas">
+          <strong>Tecnologías:</strong> HTML, CSS, JavaScript
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="pie">
+    <p class="pie-texto">&copy; 2025 Bruno Sambrano</p>
+  </footer>
+</body>
 </html>
