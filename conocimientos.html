@@ -3,34 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <title>Conocimientos | Bruno Sambrano</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/Entrega/Entrega2/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="encabezado">
       <nav class="menu">
-        <ul class="menu-lista">
-          <li><a href="index.html" class="menu-link">Sobre mí</a></li>
-          <li>
-            <a href="conocimientos.html" class="menu-link">Conocimientos</a>
-          </li>
-          <li><a href="proyectos.html" class="menu-link">Proyectos</a></li>
-          <li>
-            <a href="experiencia.html" class="menu-link">Experiencia Laboral</a>
-          </li>
-          <li><a href="contacto.html" class="menu-link">Contacto</a></li>
-        </ul>
+        <div class="menu-links">
+          <a href="index.html" class="menu-link">Sobre mí</a>
+          <a href="conocimientos.html" class="menu-link">Conocimientos</a>
+          <a href="proyectos.html" class="menu-link">Proyectos</a>
+          <a href="experiencias.html" class="menu-link">Experiencia laboral</a>
+          <a href="contacto.html" class="menu-link">Contacto</a>
+        </div>
       </nav>
     </header>
 
     <main class="contenido-principal">
-      <section class="seccion-conocimientos">
-        <h1 class="titulo-principal">Conocimientos</h1>
-        <ul class="lista-conocimientos">
-          <li class="item-conocimiento">Lenguajes de programación</li>
-          <li class="item-conocimiento">Herramientas</li>
-          <li class="item-conocimiento">Idiomas</li>
-        </ul>
-      </section>
+      <h1 class="titulo-principal">Conocimientos</h1>
+      <div class="contenedor-conocimientos">
+        <div class="box-conocimiento">
+          <h2 class="titulo-secundario">Lenguajes de Programación</h2>
+          <ul class="lista-items">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Flexbox</li>
+          </ul>
+        </div>
+
+        <div class="box-conocimiento">
+          <h2 class="titulo-secundario">Bases de Datos</h2>
+          <p>MySQL</p>
+          <ul class="lista-items">
+            <li>Subconsultas y Joins</li>
+            <li>Procedimientos y Triggers</li>
+            <li>Rutinas y funciones</li>
+            <li>Modelado y normalización de datos</li>
+          </ul>
+        </div>
+      </div>
     </main>
 
     <footer class="pie">
